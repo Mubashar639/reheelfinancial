@@ -95,23 +95,24 @@ class Trade extends React.PureComponent {
     }
 
     return (
-      <div style={{backgroundColor:'#222a3f'}}>
+      <div style={{backgroundColor:'#222a3f', border:"0 solid #181D2E", borderTopWidth:"4px",borderRightWidth:'0px'}}>
+    
         <div className="title">
           <div>
-            <div>{currentMarket.id}</div>
-            <div className="text-secondary">Make a Limit Order</div>
+            <div style={{color:"white",fontWeight:400}} >{currentMarket.id}</div>
+            <div style={{color:"rgba(255,255,255,.6)",fontWeight:200}}>Make a Limit Order</div>
           </div>
         </div>
         <div className="trade flex-1 flex-column">
-          <ul className="nav nav-tabs">
+          <ul className="nav nav-tabs" style= {{borderTop:"8px solid #181D2E",borderBottom:"8px solid #181D2E",backgroundColor:"#181D2E"}}>
             <li className="nav-item flex-1 flex">
-              <div id="buyBtn"
+              <div id="buyBtn" style={{color:"red"}}
                 className={`flex-1 buyBtn tab-button text-secondary text-center${side === 'buy' ? ' active' : ''}`}
                 onClick={() => change('side', 'buy')}>
                 Buy
               </div>
             </li>
-            <li className="nav-item flex-1 flex">
+            <li className="nav-item flex-1 flex" >
               <div id="sellBtn"
                 className={`flex-1 sellBtn tab-button text-secondary text-center${side === 'sell' ? ' active' : ''}`}
                 onClick={() => change('side', 'sell')}>

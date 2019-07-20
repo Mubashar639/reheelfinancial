@@ -23,8 +23,9 @@ class Wallet extends React.PureComponent {
     const { selectedAccountID } = this.state;
     return (
       <div>
-        <div className="title flex b justify-content-between align-items-center"id="walletTokenWrap" >
-          <div >Wallet</div>
+        <div className="title flex justify-content-between align-items-center"id="walletTokenWrap"  style={{boxShadow:"black 0px 4px 4px",zIndex:400}} >
+          {/* <div style={{boxShadow:"black 4px 4px 4px", zIndex:"100",flexDirection:"row", justifyContent:"space-between"}}> */}
+          <div  >Wallet</div>
           <Selector
             options={OPTIONS}
             selectedValue={selectedAccountID}
@@ -32,8 +33,9 @@ class Wallet extends React.PureComponent {
               this.setState({ selectedAccountID: option.value });
             }}
           />
-        </div>
-        <div className="flex-column flex-1 position-relative overflow-hidden" ref={ref => this.setRef(ref)}>
+          </div>
+        {/* </div> */}
+        <div className="flex-column flex-1 position-relative overflow-hidden" style={{color:"rgba(255,255,255,.7)"}} ref={ref => this.setRef(ref)}>
           {this.renderTabPanel()}
         </div>
       </div>

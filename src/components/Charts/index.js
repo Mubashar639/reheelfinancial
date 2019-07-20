@@ -76,7 +76,7 @@ class Charts extends React.Component {
     try {
       res = await api.get(
         `/markets/${this.props.currentMarket.id}/candles?from=${params.from}&to=${params.to}&granularity=${
-          params.granularityNum
+        params.granularityNum
         }`
       );
       if (res.data.data.meta && res.data.data.meta.noData) {
@@ -205,16 +205,16 @@ class Charts extends React.Component {
     });
     return (
       <div >
-        <div className="title flex justify-content-between align-items-center">
+        <div className="title flex justify-content-between align-items-center" style={{ borderTopLeftRadius: "10px", backgroundColor: " rgb(43, 50, 71)" }}>
           <div>
-            <div>Charts</div>
+            <div style={{ color: "white", fontWeight: 400, height: "100%", position: "relative", background: " rgb(43, 50, 71)" }}>Charts</div>
           </div>
         </div>
 
         <div className="flex-column flex-1 ">
-          <div className="grid flex-2" ref={this.tradeChartWrapper}>
+          <div className="grid flex-1" ref={this.tradeChartWrapper}>
             <TradeChart
-            id="tradeChartDropDown"
+              id="tradeChartDropDown"
               // theme="green"
               data={this.state.data}
               priceDecimals={5}
@@ -233,6 +233,7 @@ class Charts extends React.Component {
               end={this.state.end}
             />
           </div>
+
           <div className="grid flex-1 border">
             <DeepChart
               baseToken="HOT"

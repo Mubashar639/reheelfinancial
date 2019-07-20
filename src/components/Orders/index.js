@@ -16,9 +16,10 @@ class Orders extends React.PureComponent {
   render() {
     const { selectedAccountID } = this.state;
     return (
-      <div style={{backgroundColor:'#2b3247', color:'white'}}>
-        <div className="title flex justify-content-between align-items-center" >
-          <div style={{color:"white"}}>
+     
+      <div style={{backgroundColor:'#2b3247', color:'white',borderTopLeftRadius:"10px",}}>
+        <div className="title flex justify-content-between align-items-center"  style={{boxShadow:"rgba(0,0,0,.5) 0px 6px 6px",zIndex:400}} >
+          <div style={{color:"white",fontWeight:400}}>
             <div>Orders</div>
             <div className="text-secondary">View your open orders</div>
           </div>

@@ -41,13 +41,14 @@ class OrderBook extends React.Component {
     let { bids, asks, websocketConnected, currentMarket } = this.props;
 
     return (
-      <div className="orderbook flex-column flex-1" style={{backgroundColor:'#2b3247', color:'white'}}>
-        <div className="flex header text-secondary">
+      <div className="orderbook flex-column flex-1" style={{backgroundColor:'#2b3247',color:'white',display:"flex",flexWrap:"wrap"}}>
+        
+        <div className="flex header text-secondary" >
           <div className="col-6 text-right">Amount</div>
           <div className="col-6 text-right">Price</div>
         </div>
         <div className="flex-column flex-1">
-          <div className="asks flex-column flex-column-reverse flex-1 overflow-hidden">
+          <div className="asks flex-column flex-column-reverse flex-1 overflow-hidden" >
             {asks
               .slice(-20)
               .reverse()

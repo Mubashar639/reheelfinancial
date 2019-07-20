@@ -267,36 +267,39 @@ class App extends React.PureComponent {
       <div className="flex flex-1 overflow-hidden">
         <div className="flex">
           <div className="flex-column flex-1 border-right">
-            <div className="grid flex-1">
+            <div >
               <Trade />
             </div>
           </div>
-          <div className="grid border-right flex-column">
-            <div className="title">
-              <div>
-                <div>Orderbook</div>
-                <div className="text-secondary">Available Bid and Ask orders</div>
+          <div style={{border:"4px solid #181D2E", borderLeftWidth:"8px",backgroundColor:"#181D2E" }}>
+          <div className="grid border-right flex-column" style={{border:"4px solid #181D2E",borderTopWidth:"6px",borderTopLeftRadius:"10px",borderTopRightRadius:"10px"}}>
+            <div className="myclass" >
+              <div style={{ boxShadow: "rgba(0,0,0,.9) 0px 8px 8px",paddingLeft:"12px", top:"1px",position:"relative",
+              zIndex:100,width:'100%',}} >
+                <div style={{color:"white",fontWeight:"400"}} >Orderbook</div>
+                <div style={{color:"rgba(255,255,255,.7)",fontWeight:"200"}}>Available Bid and Ask orders</div>
               </div>
             </div>
             <OrderBook />
           </div>
+          </div>
         </div>
-        <div className="flex-column flex-1 border-right">
+        <div className="flex-column flex-1 border-right" style={{border:"4px solid #181D2E" ,backgroundColor:"#181D2E"}}>
           <div className="grid flex-2">
             <Charts />
           </div>
-          <div className="grid flex-1 border-top">
+          <div className="grid flex-1" style={{marginTop:"8px"  }}>
             <Orders />
           </div>
         </div>
-        <div className="flex-column">
-          <div className="grid flex-1">
-            <div className="title flex align-items-center  border-right">
-              <div>Trade History</div>
+        <div className="flex-column" style={{border:"4px solid #181D2E",borderLeftWidth:0,zIndex:100, boxShadow: "rgba(0,0,0,.8) -6px 8px 8px"}} >
+          <div className="grid flex-1" >
+            <div className="title flex align-items-center  border-right" style={{zIndex:100, boxShadow: "rgba(0,0,0,.8) 0px 8px 8px",borderTopLeftRadius:"10px"}}  >
+              <div style={{color:"white", fontWeight:400}} >Trade History</div>
             </div>
-            <TradeHistory />
+            <TradeHistory  />
           </div>
-          <div className="grid flex-1 border-top ">
+          <div className="grid flex-1 border-top " >
             <Wallet />
           </div>
         </div>

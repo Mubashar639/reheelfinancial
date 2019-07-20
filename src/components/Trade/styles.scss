@@ -24,15 +24,19 @@
 #buyBtn {
 	background-color: #2b3247;
     // color: #63bc90 !important;
-    color: white !important;
+    color:#63BC90 ;
 	font-weight: bold;
+	border-top-left-radius: 8px;
+
+	
 	
 }
 #sellBtn {
+	box-sizing: border-box;
 	background-color: #2b3247;
     // color: #d0385b !important;
-    color: white !important;
 	font-weight: bold;
+	border-top-right-radius: 8px;
 	
 }
 // #buyBtn:hover{
@@ -59,4 +63,38 @@
 .sellBtn.active {
 	background: linear-gradient(75deg, #b64667, #b75370 40%, #b96880) !important;
 	color: white !important;
+}
+.grid.flex-1{
+	display: flex;
+	height: 170px;
+}
+.sellBtn.active:after {
+    left: calc(10% - 1rem);
+    width: 0;
+    height: 0;
+    border: 1rem solid transparent;
+    bottom: -0.5rem;
+    content: "";
+    opacity: 1;
+    position: relative;
+    transition: opacity 0.05s linear;
+	border-bottom: 0;
+	top:40px;
+	background: linear-gradient(75deg, #b64667, #b75370 40%, #b96880) !important;
+	border-top-color: #b7547b;
+}
+.buyBtn.active:after {
+    left: calc(10% - 1rem);
+    width: 0;
+    height: 0;
+    border: 1rem solid transparent;
+    bottom: -0.5rem;
+    content: "";
+    opacity: 1;
+    position: relative;
+    transition: opacity 0.05s linear;
+	border-bottom: 0;
+	top:40px;
+	background: linear-gradient(75deg, #b64667, #b75370 40%, #b96880) !important;
+	border-top-color: #65aa88;
 }

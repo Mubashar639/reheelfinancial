@@ -170,11 +170,25 @@ table {
 	height: 100vh;
 	.title {
 		font-size: 14px;
-		padding: 0 12px;
+		padding: 0 0px 0 8px;
 		height: 48px;
 		border-bottom: 2px solid #181d2e !important;
 		display: flex;
 		align-items: center;
+
+
+	}
+	.myclass{
+	color :"white";
+	background-color: #5b6467;
+	background-image: linear-gradient( #5b6467 0%, #8b939a 50%) !important;
+	font-weight: 700;
+	box-shadow:  4px 20px 4px #5b6467 !important;
+	font-size: 14px;
+	height: 48px;
+	border-bottom: 2px solid #181d2e !important;
+	display: flex;
+	align-items: center;
 	}
 	.grid {
 		min-width: 330px;

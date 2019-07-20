@@ -30,6 +30,7 @@ export default class Fold extends React.PureComponent {
     return (
       <div  className={[this.props.className, 'fold'].join(' ')}>
         <div className="flod-header">
+        
           <span>{this.props.title}</span>
           <UnderlineTab options={options} selectedIndex={this.state.selectedIndex} />
         </div>

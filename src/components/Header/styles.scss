@@ -20,6 +20,10 @@
 }
 .header-container{
     background-color: rgb(46, 54, 75) !important;
+    height: 58px;
+    border-color: #181d2e;
+    border-bottom-width: 3px !important;
+    border-bottom-style: solid;
 }
 .header-connect-btn{
     transition: background-image 1s ;

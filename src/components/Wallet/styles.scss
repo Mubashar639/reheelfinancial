@@ -4,8 +4,12 @@
 }
 #walletTokenWrap{
     background: #383E53;
-    // font-weight: bold;
-    color: white !important;
+    color: white;
+    font-weight: 400;
+    z-index: 800;
+    margin-bottom: 8px;
+    border-top-right-radius: 8px;
+    ;
 }
 // .b ul li .active{
 //     background-color: #2E364B !important;
