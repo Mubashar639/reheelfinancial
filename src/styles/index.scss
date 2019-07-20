@@ -198,3 +198,11 @@ table {
 		overflow: hidden;
 	}
 }
+.tab-button{
+	background-color: #181d2e
+}
+.tab-button.active{
+    background: linear-gradient(75deg, #65aa88, #65aa88 50%, #7CC0D3 100%);
+	color: white !important;
+	font-weight: 300;
+}

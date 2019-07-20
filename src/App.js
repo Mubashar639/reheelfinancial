@@ -288,7 +288,7 @@ class App extends React.PureComponent {
           <div className="grid flex-2">
             <Charts />
           </div>
-          <div className="grid flex-1" style={{marginTop:"8px"  }}>
+          <div className="grid" style={{marginTop:"8px"  }}>
             <Orders />
           </div>
         </div>
